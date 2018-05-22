@@ -1,0 +1,12 @@
+# with side effects
+
+a = 0
+
+def increment():
+    global a
+    a += 1
+
+#without side effects
+
+def increment_v2(b):
+    return b + 1
