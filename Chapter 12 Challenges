@@ -1,0 +1,21 @@
+#1
+import math
+
+class Apple():
+    def __init__(self, w, c, j):
+        self.width = w
+        self.colour = c
+        self.juicy = j
+        print("Apple Created!")
+
+class Circle():
+    def __init__(self, r, p):
+        self.radius = r
+        self.pi = p
+        print("Cricle Created!")
+
+    def area(self):
+        return self.pi * self.radius ** 2
+
+cricle = Cricle(5, math.pi)
+print(circle.area())
