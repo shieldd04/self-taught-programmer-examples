@@ -1,0 +1,54 @@
+#3
+class Shape():
+    def what_am_i(self):
+        print("I am a shape")
+#1
+class Rectangle(Shape):
+    def __init__(self, w, l):
+        self.width = w
+        self.len = l
+
+    def calculate_perimeter(self):
+        return(self.width + self.len) * 2
+
+class Square(Shape):
+    def __init__(self, s1):
+        self.s1 = s1
+
+    def calculate_perimeter(self):
+        return self.s1 * 4
+
+    def change_size(self, m):
+        self.s1 += m
+
+
+squ = Square(20)
+rec = Rectangle(10, 20)
+
+print(squ.calculate_perimeter())
+print(rec.calculate_perimeter())
+
+#2
+squ.change_size(-10)
+print(squ.calculate_perimeter())
+
+#3cont
+squ.what_am_i()
+rec.what_am_i()
+
+#4
+
+class Horse():
+    def __init__(self, name, breed, rider):
+        self.name = name
+        self.breed = breed
+        self.rider = rider
+
+class Rider():
+    def __init__(self, name):
+        self.name = name
+
+jim = Rider("James")
+oaty = Horse("Oaty", "Ponykiller", jim)
+
+print(oaty.rider.name)
