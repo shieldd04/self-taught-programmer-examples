@@ -1,0 +1,19 @@
+#1
+class Square():
+    square_list = []
+
+    def __init__(self, s1):
+        self.s1 = s1
+        Square.square_list.append(self)
+
+    def __repr__(self):
+        return("{} by {} by {} by {}".format(self.s1, self.s1, self.s1, self.s1))
+
+squ = Square(29)
+print(squ)
+
+def compare(object1, object2):
+    return object1 is object2
+
+
+print(compare("Dave", "dave"))
