@@ -1,0 +1,7 @@
+import re
+
+1 = "Beautiful is better than uguly."
+
+matches = re.findall("Beautiful", 1)
+
+print(matches)
